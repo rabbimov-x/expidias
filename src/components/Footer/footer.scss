@@ -1,0 +1,44 @@
+
+
+
+
+.Footer{
+    background-color: var(--cl-footer);
+    padding-top: 40px;
+
+    .nav-link{
+        font-family: 'Montserrat',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: var(--cl-white);
+        cursor: pointer;
+    }
+    .bold{
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .icons{
+        display: flex;
+        width: 100%;
+        padding: 0 25px;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    .icon{
+        width: 24px;
+        height: 24px;
+        overflow: hidden;
+        padding: 0;
+        img{
+         transition: all 0.2s linear;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        
+    }
+}

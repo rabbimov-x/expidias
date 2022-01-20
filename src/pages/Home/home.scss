@@ -1,0 +1,103 @@
+
+
+.home{
+    width: 100%;
+    overflow-x: hidden;
+    font-family: "Montserrat-Black" ,  sans-serif;
+
+
+    .header{
+        position: relative;
+        background-image: url(../../../public/assets/images/png/headerbg.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        .rectang{
+            width: 100%;
+            margin-left: -15px;
+            height: 90px;
+            position: absolute;
+            bottom: 0;
+            background: linear-gradient(180deg, rgba(34, 40, 49, 0) 0%, #222831 100%);
+        }
+        .headerBg{
+         position: absolute;
+         margin: 0 -15px;
+         width: 101%;
+         height: 100%;
+         background: rgba(0, 0, 0, 0.35);
+       }
+       .travel-h{
+        width: 50%;
+        
+        margin: 100px auto 0 auto;
+        font-family: 'Montserrat',sans-serif;
+        color: var(--cl-white);
+        font-style: normal;
+        font-weight: bold;
+        font-size: 72px;
+        line-height: 88px;
+        text-align: center;
+        
+        z-index: 1;
+       }
+       .travel-p{
+        width: 58%;
+        margin: 35px auto 0 auto;
+        padding-bottom: 89px;
+        font-family: 'Montserrat',sans-serif;
+        color: var(--cl-white);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        z-index: 1;
+        text-align: center;
+       }
+    }
+
+    .main{
+        background-color: var(--cl-bg);
+        padding: 340px 0 120px 0;
+        position: relative;
+        .download-text{
+            text-align: center;
+            margin: 100px auto 0 auto;
+            width: 30%;
+            color: var(--cl-white);
+        }
+        h1{
+            font-family: 'Montserrat',sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 39px;
+            color: var(--cl-white);
+        }
+        .download-img-btn{
+            width: 278px;
+            height: 83.84px;
+            overflow: hidden;
+            display: flex;
+            margin: 30px 15px;
+            justify-content: center;
+            align-items: center;
+            
+
+            border: 0;
+            background-color: transparent;
+            transition: all 0.2s linear;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+
+        .SearchContainer{
+            position: absolute;
+            top: -390px;
+           
+        }
+
+    }
+
+}

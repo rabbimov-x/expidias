@@ -1,0 +1,144 @@
+
+
+
+
+
+.SearchContainer{
+    background-color: var(--cl-white);
+    
+    width: 100%;
+    border-radius: 30px;
+    box-sizing: border-box;
+
+    .check-bok{
+        border-color: blue;
+        border: 1px solid blue;
+        margin-right: 10px;
+    }
+    .nav-link{
+        color: var(--cl-grey);
+    }
+    .input-city{
+        border: 0.5px solid #000000;
+        box-sizing: border-box;
+       
+        border-radius: 10px;
+        padding: 10px 17px;
+        
+       input{
+           border: none;
+       }
+        input:focus, textarea:focus, select:focus{
+            outline: none;
+        }
+    }
+    .replace{
+        width: 37px;
+        height: 37px;
+        cursor: pointer;
+        margin: auto 0;
+        img{
+            width: 100%;
+        }
+    }
+    .line{
+        width: 95%;
+        background-color: #888AA2;
+        height: 1px;
+        margin-left: 10px;
+    }
+    .nav-item1{
+         position: relative;
+         transition: all 0.3s linear;
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--cl-blue);
+            transition: all 0.3s linear;
+        }
+
+        &:hover{
+            .nav-link{
+                color: var(--cl-blue);
+                font-weight: bolder;
+            }
+
+            &::after{
+                width: 100%;
+            }
+        }
+    }
+    .btn-search{
+        margin: 30px auto 0 auto;
+        background: #1F4AA8;
+        border-radius: 39px;
+        padding: 15px 80px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--cl-white);
+        border: none;
+        transition: all 0.2s linear;
+
+        &:hover{
+            box-shadow: 0 0 10px var(--cl-blue);
+        }
+    }
+    .dropdoun{
+        color: var(--cl-blue);
+        position: relative;
+        cursor: pointer;
+        padding-right: 10px;
+        transition: all 0.1s linear;
+        h2{
+            line-height: 0px;
+        }
+
+        .dropdounin{
+            display: none;
+            position: absolute;
+            background-color: var(--cl-white);
+            top: 20px;
+            left: 0px;
+            width: 100%;
+            font-size: 12px;
+            font-family: 'Montserrat',sans-serif;
+            transition: all 0.1 linear;
+         
+            .nav-link{
+                
+                &:hover{
+                    color: var(--cl-blue);
+                }
+            }
+
+            
+        }
+
+        &:hover{
+            .dropdounin{
+                display: block;
+                z-index: 2;
+                
+
+            }
+        }
+    }
+    .t-v{
+        display: flex;
+        justify-content: right;
+        align-items: center
+        ;
+    }
+
+    
+ 
+
+    
+}
