@@ -17,6 +17,7 @@ const Home = ()=>{
                 <div className="header container-fluid">
                  < div className="rectang">
                     </div>
+                    <div className="bg-img-header"></div>
                     <div className="headerBg"></div>
                     <div className="row">
                         <Navbar/>
