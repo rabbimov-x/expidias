@@ -7,10 +7,15 @@
 
 
     .header{
+
         position: relative;
         background-image: url(../../../public/assets/images/png/headerbg.png);
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size:100%;
+         
+        @media (max-width: 1335px){
+        background-size: auto;
+        }
         .rectang{
             width: 100%;
             margin-left: -15px;
@@ -39,6 +44,19 @@
         text-align: center;
         
         z-index: 1;
+
+        @media ( max-width: 1335px ) {
+            width: 50%;
+            line-height: calc(50px + 30 * ((100vw - 960px)/540));
+            font-size: calc(45px + 30 * ((100vw - 960px)/540));
+        }
+        @media (max-width: 768px ) {
+            font-size: 28px;
+            line-height: 35px;
+        }
+        
+
+        
        }
        .travel-p{
         width: 58%;
@@ -52,6 +70,13 @@
         line-height: 22px;
         z-index: 1;
         text-align: center;
+
+
+        @media (max-width: 576px) {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 50px;
+        }
        }
     }
 
@@ -59,11 +84,19 @@
         background-color: var(--cl-bg);
         padding: 340px 0 120px 0;
         position: relative;
+        @media (max-width:768px) {
+            padding-top: 30px;
+        }
         .download-text{
             text-align: center;
             margin: 100px auto 0 auto;
             width: 30%;
             color: var(--cl-white);
+
+            @media (max-width: 768px) {
+                width: 40%;
+                font-size: 26px;
+            }
         }
         h1{
             font-family: 'Montserrat',sans-serif;
@@ -81,22 +114,40 @@
             margin: 30px 15px;
             justify-content: center;
             align-items: center;
+            border-radius: 10px;
             
-
+            img{
+                @media (max-width: 768px) {
+                 transform: scale(0.7);
+                }
+            }
+            
             border: 0;
             background-color: transparent;
             transition: all 0.2s linear;
 
+            @media (max-width: 768px) {
+                width: 200px;
+                height: 60px;
+               }
+            
+            
             &:hover{
                 transform: scale(1.05);
             }
+            
         }
 
         .SearchContainer{
             position: absolute;
             top: -390px;
-           
+           @media (max-width: 768px) {
+               position:sticky;
+               margin-bottom: 30px;
+           }
         }
+
+        
 
     }
 

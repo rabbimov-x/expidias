@@ -31,7 +31,7 @@ const SearchContainer = ()=>{
                         <div className="row">
 
                             
-                            <div className=" col-6 d-flex  justify-content-between aligin-items-center pl-4">
+                            <div className=" col-12 col-md-6 col-8 d-flex  justify-content-between aligin-items-center pl-4">
                                 <div className="w3-half" >
                                     <input type="radio"  className="check-bok" id="customRadio2" name="customRadio"/>
                                     <label for="customRadio2">One-way</label>
@@ -47,7 +47,7 @@ const SearchContainer = ()=>{
 
                             
                             </div>   
-                            <div className="col-6 t-v ">
+                            <div className="col-md-6 t-v ">
                                     <div className="dropdoun d-flex justify-content-center aligin-items-center">
                                         <p>2 traveller 	</p>
                                         <h2>&#8964;</h2>
@@ -71,30 +71,34 @@ const SearchContainer = ()=>{
                                         </div>
                                     </div>
                             </div> 
-                            <div className="col-12 pt-2 d-flex justify-content-between aligin-items-center">
-                                <div className="input-city"> 
-                                    <img src="./assets/images/svg/fly.svg" className="pr-3" alt="" />
-                                <input type="text" value={fly} onChange={(e)=>setFly(e.target.value)} placeholder="from" required />
+                            <div className="col-12 d-flex flex-wrap  p-0 ">
+                                <div className="col-12 col-xl-7 d-md-flex justify-content-center">
+                                    <div className="input-city"> 
+                                        <img src="./assets/images/svg/fly.svg" className="pr-3" alt="" />
+                                    <input type="text" value={fly} onChange={(e)=>setFly(e.target.value)} placeholder="from" required />
 
-                                </div>
-                                <div className="replace" onClick={()=>{
-                                    const a = land;
-                                    setLand(fly);
-                                    setFly(a);
+                                    </div>
+                                    <div className="replace" onClick={()=>{
+                                        const a = land;
+                                        setLand(fly);
+                                        setFly(a);
 
-                                }}>
-                                    <img src="./assets/images/svg/change_btn.svg" alt="" />
+                                    }}>
+                                        <img src="./assets/images/svg/change_btn.svg" alt="" />
+                                    </div>
+                                    <div className="input-city "  > 
+                                        <img src="./assets/images/svg/land.svg" className="pr-3" alt="" />
+                                    <input type="text" value={land} onChange={(e)=>setLand(e.target.value)}  placeholder="to" required />
+                                    
+                                    </div>
                                 </div>
-                                <div className="input-city"  > 
-                                    <img src="./assets/images/svg/land.svg" className="pr-3" alt="" />
-                                <input type="text" value={land} onChange={(e)=>setLand(e.target.value)}  placeholder="to" required />
-                                
-                                </div>
-                                <div className="input-city">
+                                <div className=" col-12 col-md-12 col-xl-5  d-md-flex justify-content-center justify-content-xl-between  ">
+                                <div className="input-city ml-2 mr-2">
                                     <input type="date"  className="form-data" required />
                                 </div>
-                                <div className="input-city">
+                                <div className="input-city ml-2 mr-md-4 mr-2">
                                     <input type="date" className="form-data" required />
+                                </div>
                                 </div>
                             </div>
                             <button className="btn-search" type="sumbit">Search</button>

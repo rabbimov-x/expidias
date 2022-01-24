@@ -38,21 +38,28 @@ const Home = ()=>{
                         <div className="container">
                             <div className="row">
                             <div className="col-12 d-flex justify-content-center">
-                            <SearchContainer className="SearchContainer"/>
+                                <div className="col-12">
+                                    <SearchContainer className="SearchContainer"/>
+                                </div>
                             </div>
                             <div className="col-12">
+                                <div className="col-12">
                            <h1>Top Most Popular Destinations</h1>
+                                </div>
                         </div>
-                        <div className="col-6">
+                        <div className=" col-md-6">
+                            <div className="col-12">
                             <ImgCard1/>
+                                </div>
                             <div className="w-100 d-flex justify-content-between">
-                            <div className="col-6 pl-0"><ImgCard2/></div>
-                            <div className="col-6 pr-0"><ImgCard2/></div>
+                            
+                                <div className="col-6"><ImgCard2/></div>
+                                <div className="col-6"><ImgCard2/></div>
                                
                             </div>
                         </div>
-                        <div className="col-3"><ImgCard3/></div>
-                        <div className="col-3"><ImgCard3/></div>
+                        <div className="col-11 ml-auto mr-auto   col-sm-6 col-md-3"><ImgCard3/></div>
+                        <div className="col-11 ml-auto mr-auto   col-sm-6 col-md-3"><ImgCard3/></div>
 
                         <div className="col-12">
                             <h1 className="download-text">Download Expedia App !</h1>

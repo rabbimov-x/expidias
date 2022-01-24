@@ -4,6 +4,7 @@
   width: 100%;
   border-radius: 30px;
   box-sizing: border-box;
+  padding: 10px 10px 20px 10px;
   z-index: 2;
 
   .check-bok {
@@ -13,17 +14,26 @@
   }
   .nav-link {
     color: var(--cl-grey);
-    font-weight: 50;
-  }
 
+    @media (max-width: 576px) {
+      font-size: 12px;
+    }
+  }
   .input-city {
     border: 0.5px solid #000000;
     box-sizing: border-box;
+    display: flex;
 
     border-radius: 10px;
     padding: 10px 17px;
+    margin: 10px 0;
+
+    img {
+      width: 20%;
+    }
 
     input {
+      width: 100%;
       border: none;
     }
     input:focus,
@@ -36,9 +46,12 @@
     width: 37px;
     height: 37px;
     cursor: pointer;
-    margin: auto 0;
+    margin: auto 15px;
     img {
       width: 100%;
+    }
+    @media (max-width: 768px) {
+      margin: 0 auto;
     }
   }
   .line {
@@ -46,13 +59,12 @@
     background-color: #888aa2;
     height: 1px;
     margin-left: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
-  .nav-item1,
-  .acteve {
+
+  .nav-item1 {
     position: relative;
     transition: all 0.3s linear;
-
     &::after {
       content: "";
       position: absolute;
@@ -67,6 +79,7 @@
     &:hover {
       .nav-link {
         color: var(--cl-blue);
+        font-weight: bolder;
       }
 
       &::after {
@@ -75,12 +88,18 @@
     }
   }
 
-  //   .active {
-  //     color: var(--cl-blue);
-  //     font-weight: bolder;
-  //   }
+  .active {
+    .nav-link {
+      color: var(--cl-blue);
+      font-weight: bolder;
+    }
+
+    &::after {
+      width: 100%;
+    }
+  }
   .btn-search {
-    margin: 30px auto 30px auto;
+    margin: 30px auto 0 auto;
     background: #1f4aa8;
     border-radius: 39px;
     padding: 15px 80px;
@@ -136,5 +155,8 @@
     display: flex;
     justify-content: right;
     align-items: center;
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
   }
 }
