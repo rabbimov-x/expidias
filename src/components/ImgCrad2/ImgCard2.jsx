@@ -8,7 +8,7 @@ const ImgCard2 = ()=>{
             <h2>Hokokuji Bamboo Forest</h2>
             <p>Alberta, Canada</p>
         </div>
-        <img src="./assets/images/png/image_3.png" />
+        <img src="./assets/images/png/image_3.png" alt="error" />
         
     </div>
     )

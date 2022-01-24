@@ -58,10 +58,10 @@ const Home = ()=>{
                         </div>
                         <div className="col-12 d-flex justify-content-center align-items-center">
                           <button className="download-img-btn">
-                              <img src="./assets/images/png/google_play.png"/>
+                              <img src="./assets/images/png/google_play.png" alt="error"/>
                           </button>
                           <button className="download-img-btn">
-                              <img src="./assets/images/png/app_store.png"/>
+                              <img src="./assets/images/png/app_store.png" alt="error"/>
                           </button>
                         </div>
                             </div>

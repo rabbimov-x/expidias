@@ -46,9 +46,9 @@ const SearchContainer = ()=>{
                                         <h2>&#8964;</h2>
                                         <div className="dropdounin">
                                             <ul className="nav flex-column">
-                                                <li className="nav-item"> <a className="nav-link">1 Toshkent </a></li>
-                                                <li className="nav-item"> <a className="nav-link">2 Toshkent</a></li>
-                                                <li className="nav-item"> <a className="nav-link">3 Toshkent</a></li>
+                                                <li className="nav-item"> <span className="nav-link">1 Toshkent </span></li>
+                                                <li className="nav-item"> <span className="nav-link">2 Toshkent</span></li>
+                                                <li className="nav-item"> <span className="nav-link">3 Toshkent</span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -57,9 +57,9 @@ const SearchContainer = ()=>{
                                         <h2>&#8964;</h2>
                                         <div className="dropdounin">
                                             <ul className="nav flex-column">
-                                                <li className="nav-item"> <a className="nav-link">1 Toshkent</a></li>
-                                                <li className="nav-item"> <a className="nav-link">2 Toshkent</a></li>
-                                                <li className="nav-item"> <a className="nav-link">3 Toshkent</a></li>
+                                                <li className="nav-item"> <span className="nav-link">1 Toshkent</span></li>
+                                                <li className="nav-item"> <span className="nav-link">2 Toshkent</span></li>
+                                                <li className="nav-item"> <span className="nav-link">3 Toshkent</span></li>
                                             </ul>
                                         </div>
                                     </div>

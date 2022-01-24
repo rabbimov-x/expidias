@@ -8,7 +8,7 @@ const ImgCard1 = ()=>{
                 <h2>Moraine Lake</h2>
                 <p>Alberta, Canada</p>
             </div>
-            <img src="./assets/images/png/image_3.png" />
+            <img src="./assets/images/png/image_3.png" alt="error" />
             
         </div>
     )
