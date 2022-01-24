@@ -9,6 +9,7 @@ import SearchContainer from "../../components/SreachContainer/SearchContainer"
 import "./home.scss"
 
 const Home = ()=>{
+   
     return(
         <div className="home">
             

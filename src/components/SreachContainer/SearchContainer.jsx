@@ -1,14 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import "./SearchContainer.scss"
 
 const SearchContainer = ()=>{
+    const [fly , setFly] = useState("");
+    const [land, setLand] = useState("");
+
+    // useEffect(()=>{
+    //     setFly();
+    //     setLand();
+    // },[fly ])
     return(
         <div className="SearchContainer">
              <div className="container">
          
 
         <ul className="nav">
-            <li className="nav-item  nav-item1 active"><a href="#all" data-toggle="tab" className="nav-link ">Stays</a></li>
+            <li className="nav-item  nav-item1 acteve "><a href="#all" data-toggle="tab" className="nav-link ">Stays</a></li>
             <li className="nav-item nav-item1"><a href="#pizza" data-toggle="tab" className="nav-link">Flight</a></li>
             <li className="nav-item nav-item1"><a href="#burger" data-toggle="tab" className="nav-link">Flight</a></li>
             <li className="nav-item nav-item1"><a href="#combo" data-toggle="tab" className="nav-link">Packages</a></li>
@@ -20,7 +27,7 @@ const SearchContainer = ()=>{
             <div className="tab-pane active" id="all">
 
                 <section>
-                    <from action="/action_page.php" className="formAll container">
+                    <form   action="/action_page.php" className="formAll container">
                         <div className="row">
 
                             
@@ -67,27 +74,32 @@ const SearchContainer = ()=>{
                             <div className="col-12 pt-2 d-flex justify-content-between aligin-items-center">
                                 <div className="input-city"> 
                                     <img src="./assets/images/svg/fly.svg" className="pr-3" alt="" />
-                                <input type="text" placeholder="from" required />
+                                <input type="text" value={fly} onChange={(e)=>setFly(e.target.value)} placeholder="from" required />
 
                                 </div>
-                                <div className="replace">
+                                <div className="replace" onClick={()=>{
+                                    const a = land;
+                                    setLand(fly);
+                                    setFly(a);
+
+                                }}>
                                     <img src="./assets/images/svg/change_btn.svg" alt="" />
                                 </div>
-                                <div className="input-city"> 
+                                <div className="input-city"  > 
                                     <img src="./assets/images/svg/land.svg" className="pr-3" alt="" />
-                                <input type="text" placeholder="to" required />
+                                <input type="text" value={land} onChange={(e)=>setLand(e.target.value)}  placeholder="to" required />
                                 
                                 </div>
                                 <div className="input-city">
-                                    <input type="date" className="form-data" required />
+                                    <input type="date"  className="form-data" required />
                                 </div>
                                 <div className="input-city">
                                     <input type="date" className="form-data" required />
                                 </div>
                             </div>
-                            <button className="btn-search" type="sumit">Search</button>
+                            <button className="btn-search" type="sumbit">Search</button>
                         </div>
-                  </from>  
+                  </form>  
                 </section>
                 
 
