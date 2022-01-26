@@ -123,6 +123,16 @@
         width: 100%;
       }
     }
+    &:focus {
+      .nav-link {
+        color: var(--cl-blue);
+        font-weight: bolder;
+      }
+
+      &::after {
+        width: 100%;
+      }
+    }
   }
 
   .acteve {
