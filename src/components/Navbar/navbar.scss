@@ -38,7 +38,10 @@
         &:hover {
           transform: scale(1.2);
         }
-
+        @media (min-width: 1400px) {
+          font-size: calc(20px + 10 * ((100vw - 1460px) / 540));
+          margin: 0 calc(5px + 10 * ((100vw - 1460px) / 540));
+        }
         @media (max-width: 767px) {
           font-size: 14px;
         }
