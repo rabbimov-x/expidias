@@ -50,17 +50,17 @@ const Home = ()=>{
                         </div>
                         <div className=" col-md-6">
                             <div className="col-12">
-                            <ImgCard1/>
+                            <ImgCard1 img = "./assets/images/png/image_3.png"/>
                                 </div>
                             <div className="w-100 d-flex justify-content-between">
                             
-                                <div className="col-6"><ImgCard2/></div>
-                                <div className="col-6"><ImgCard2/></div>
+                                <div className="col-6"><ImgCard2 img = "./assets/images/png/image_5.png"/></div>
+                                <div className="col-6"><ImgCard2 img = "./assets/images/png/image_6.png"/></div>
                                
                             </div>
                         </div>
-                        <div className="col-11 ml-auto mr-auto   col-sm-6 col-md-3"><ImgCard3/></div>
-                        <div className="col-11 ml-auto mr-auto   col-sm-6 col-md-3"><ImgCard3/></div>
+                        <div className="col-11 ml-auto mr-auto   col-sm-6 col-md-3"><ImgCard3 img = "./assets/images/png/image_7.png"/></div>
+                        <div className="col-11 ml-auto mr-auto   col-sm-6 col-md-3"><ImgCard3 img = "./assets/images/png/image_8.png"/></div>
 
                         <div className="col-12">
                             <h1 className="download-text">Download Expedia App !</h1>
