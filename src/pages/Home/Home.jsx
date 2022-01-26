@@ -21,7 +21,7 @@ const Home = ()=>{
                     <div className="headerBg"></div>
                     <div className="row">
                         <Navbar/>
-                        <div className="container">
+                        <div className="container cr">
                             <div className="row text-center">
                             <p className="travel-h ">It Matters Who You Travel With  </p>
                             <p className="travel-p">
@@ -36,7 +36,7 @@ const Home = ()=>{
                 <div className="main container-fluid">
                     
                     <div className="row">
-                        <div className="container">
+                        <div className="container cr">
                             <div className="row">
                             <div className="col-12 d-flex justify-content-center">
                                 <div className="col-12">
@@ -67,7 +67,7 @@ const Home = ()=>{
                         </div>
                         <div className="col-12 d-flex justify-content-center align-items-center">
                           <button className="download-img-btn">
-                              <img src="./assets/images/png/google_play.png" alt="error"/>
+                              <img src="./assets/images/png/google.jpg" alt="error"/>
                           </button>
                           <button className="download-img-btn">
                               <img src="./assets/images/png/app_store.png" alt="error"/>

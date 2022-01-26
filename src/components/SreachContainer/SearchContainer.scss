@@ -7,16 +7,40 @@
   padding: 10px 10px 20px 10px;
   z-index: 2;
 
+  .w3-half {
+    display: flex;
+    align-items: center;
+    label {
+      margin: 0;
+      font-size: 14px;
+      @media (min-width: 1200px) {
+        font-size: 18px;
+      }
+    }
+  }
+  .nav {
+    padding-left: 20px;
+  }
   .check-bok {
     border-color: blue;
     border: 1px solid blue;
     margin-right: 10px;
+
+    @media (min-width: 1200px) {
+      width: 25px;
+      height: 25px;
+    }
   }
   .nav-link {
     color: var(--cl-grey);
 
     @media (max-width: 576px) {
       font-size: 12px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 18px;
+      line-height: 24px;
+      padding: 18px 15px;
     }
   }
   .input-city {
@@ -41,6 +65,16 @@
     select:focus {
       outline: none;
     }
+
+    @media (min-width: 1200px) {
+      width: 45%;
+
+      input {
+        &::placeholder {
+          font-size: 20px;
+        }
+      }
+    }
   }
   .replace {
     width: 37px;
@@ -55,11 +89,14 @@
     }
   }
   .line {
-    width: 95%;
+    width: 94%;
     background-color: #888aa2;
     height: 1px;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-bottom: 15px;
+    @media (min-width: 1200px) {
+      margin: 0 0 30px 20px;
+    }
   }
 
   .nav-item1 {
@@ -88,7 +125,7 @@
     }
   }
 
-  .active {
+  .acteve {
     .nav-link {
       color: var(--cl-blue);
       font-weight: bolder;
@@ -132,10 +169,14 @@
       background-color: var(--cl-white);
       top: 20px;
       left: 0px;
-      width: 100%;
+      width: 105%;
       font-size: 12px;
       font-family: "Montserrat", sans-serif;
       transition: all 0.1 linear;
+
+      span {
+        padding: 10px 5px;
+      }
 
       .nav-link {
         &:hover {

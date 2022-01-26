@@ -3,7 +3,7 @@ import "./navbar.scss"
 
 const Navbar = ()=>{
     return(
-        <div className="Navbar container">
+        <div className=" container cr Navbar">
             
          <div className="row ">
              <div className="col-xl-3 col-lg-3 d-flex pb-4 pb-md-0">

@@ -11,7 +11,7 @@ const SearchContainer = ()=>{
     // },[fly ])
     return(
         <div className="SearchContainer">
-             <div className="container">
+             <div className="container crin">
          
 
         <ul className="nav">
@@ -27,7 +27,7 @@ const SearchContainer = ()=>{
             <div className="tab-pane active" id="all">
 
                 <section>
-                    <form   action="/action_page.php" className="formAll container">
+                    <form   action="/action_page.php" className="formAll container crbig">
                         <div className="row">
 
                             
@@ -52,7 +52,7 @@ const SearchContainer = ()=>{
                                         <p>2 traveller 	</p>
                                         <h2>&#8964;</h2>
                                         <div className="dropdounin">
-                                            <ul className="nav flex-column">
+                                            <ul className="nav flex-column pl-0">
                                                 <li className="nav-item"> <span className="nav-link">1 Toshkent </span></li>
                                                 <li className="nav-item"> <span className="nav-link">2 Toshkent</span></li>
                                                 <li className="nav-item"> <span className="nav-link">3 Toshkent</span></li>
@@ -63,7 +63,7 @@ const SearchContainer = ()=>{
                                         <p>Economy</p>
                                         <h2>&#8964;</h2>
                                         <div className="dropdounin">
-                                            <ul className="nav flex-column">
+                                            <ul className="nav flex-column pl-0">
                                                 <li className="nav-item"> <span className="nav-link">1 Toshkent</span></li>
                                                 <li className="nav-item"> <span className="nav-link">2 Toshkent</span></li>
                                                 <li className="nav-item"> <span className="nav-link">3 Toshkent</span></li>
@@ -71,7 +71,7 @@ const SearchContainer = ()=>{
                                         </div>
                                     </div>
                             </div> 
-                            <div className="col-12 d-flex flex-wrap  p-0 ">
+                            <div className="col-12 d-flex flex-wrap  p-0  pt-xl-3">
                                 <div className="col-12 col-xl-7 d-md-flex justify-content-center">
                                     <div className="input-city"> 
                                         <img src="./assets/images/svg/fly.svg" className="pr-3" alt="" />
@@ -93,7 +93,7 @@ const SearchContainer = ()=>{
                                     </div>
                                 </div>
                                 <div className=" col-12 col-md-12 col-xl-5  d-md-flex justify-content-center justify-content-xl-between  ">
-                                <div className="input-city ml-2 mr-2">
+                                <div className="input-city ml-2 mr-2 mr-xl-4    ">
                                     <input type="date"  className="form-data" required />
                                 </div>
                                 <div className="input-city ml-2 mr-md-4 mr-2">
